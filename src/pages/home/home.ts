@@ -7,8 +7,15 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  myVariable: string = 'The force is with me!';
 
+  constructor(public navCtrl: NavController) { }
+
+  updateMyValue() {
+    this.myVariable = 'Now the force is even stronger!';
   }
 
+  clearMyValue() {
+    this.myVariable = 'The force is with me!';
+  }
 }
